@@ -31,3 +31,18 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 
+const FOTOS = document.querySelectorAll(".foto img");
+const POPUP = document.querySelector(".popup");
+const POPUP_CLOSE = document.querySelector(".popup__close")
+const POPUP_IMG = document.querySelector(".popup__img");
+
+FOTOS.forEach((foto) => {
+    foto.addEventListener("click", (e) =>{
+        POPUP.classList.remove("hidden");
+        POPUP_IMG.src = e.target.src;
+    });
+});
+
+POPUP_CLOSE.addEventListener("click", () => {
+    POPUP.classList.add("hidden");
+})
