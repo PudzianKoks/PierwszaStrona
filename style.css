@@ -129,6 +129,7 @@ a:hover
     color: white;
     text-align: center;
     height: 700px;
+    font-size: 28px;
 }
 
 #onas #first-part
@@ -177,6 +178,8 @@ h1
     justify-content: space-evenly;
     list-style-type: none;
     color: rgb(28, 28, 28);
+    font-size: 28px;
+    
     
 }
 
@@ -242,8 +245,37 @@ h1
     cursor: pointer;
 }
 
-#oferta
+
+.leftside, .rightside
 {
-    background-color: rgb(28, 28, 28);
+    height: 500px;
+
+}
+
+.leftside
+{
+    background: rgb(28, 28, 28);
+    width: 50%;
+    float: left;
     color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+.leftside p{
+    font-size: 20px;
+}
+
+.rightside
+{
+    background: rgb(28, 28, 28);
+    width: 50%;
+    float: right;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+.rightside p{
+    font-size: 20px;
 }
